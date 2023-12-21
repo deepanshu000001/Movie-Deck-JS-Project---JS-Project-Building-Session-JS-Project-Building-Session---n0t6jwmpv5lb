@@ -1,176 +1,139 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap");
 
-* {
-  font-family: "Poppins", sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Lato&family=League+Spartan:wght@300&family=Poppins:ital,wght@0,500;1,500&family=Roboto:ital,wght@1,100&display=swap');
+
+*{
+  box-sizing: border-box;
   padding: 0;
   margin: 0;
+  font-family: 'Poppins';
 }
-/* Style the header element */
-header {
-  background-color: #333;
-  color: white;
-  padding: 20px;
-  text-align: left;
+body{
+  height: 100vh;
+  
 }
-
-header > a {
-  color: white;
-  text-decoration: none;
-}
-
-/* Style the search bar element */
-.search-bar {
-  display: flex;
-  justify-content: center;
-  margin: 10px;
-}
-
-/* Style the input element */
-#search-input {
-  width: 300px;
-  height: 30px;
-  border: 1px solid #333;
-  border-radius: 5px;
-  margin-right: 10px;
-  padding: 0 7px;
-}
-
-#search-input::placeholder {
-  font-family: inherit;
-}
-
-/* Style the button element */
-#search-button {
-  width: 100px;
-  height: 33px;
-  border: none;
-  border-radius: 5px;
-  background-color: #333;
-  color: white;
-  cursor: pointer;
-}
-
-/* Style the sorting options element */
-.sorting-options {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-  margin-bottom: 15px;
-}
-
-/* Style the sorting buttons */
-#sort-by-date,
-#sort-by-rating {
-  width: 225px;
-  height: 30px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-/* Style the active sorting button */
-.active-sort {
-  background-color: #333;
-  color: white;
-}
-
-/* Style the tabs element */
-.tabs {
-  display: flex;
-  justify-content: flex-start;
-  gap: 10px;
-  margin-left: 40px;
-}
-
-/* Style the tab buttons */
-#all-tab,
-#favorites-tab {
-  width: 100px;
-  height: 30px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-/* Style the active tab button */
-.active-tab {
-  background-color: #333;
-  color: white;
-}
-
-/* Style the list element */
-#movies-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  list-style-type: none;
-  padding: 20px 0;
-}
-
-/* Style the card element */
-.card {
-  width: 200px;
-  height: 375px;
-  margin: 10px;
-  border: 1px solid #333;
-  border-radius: 5px;
-}
-
-/* Style the poster image element */
-.poster {
-  width: 200px;
-  height: 250px;
-  object-fit: cover;
-}
-
-/* Style the title element */
-.title {
-  font-size: 16px;
-  font-weight: bold;
+header{
   text-align: center;
-  margin-bottom: 10px;
-}
-
-.vote-favouriteIcon {
-  display: flex;
-  justify-content: space-around;
-}
-
-/* Style the vote count and vote average elements */
-.vote-count,
-.vote-average {
-  font-size: 14px;
-}
-
-/* Style the favorite icon element */
-.favorite-icon {
-  width: 20px;
-  height: 20px;
-  cursor: pointer;
-  display: flex;
-  place-items: center;
-  margin-top: 15px;
-}
-
-.pagination {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 10px;
-}
-
-#prev-button, #page-number-button, #next-button {
-  margin-right: 10px;
-  padding: 5px 7px;
-  outline: none;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-/* Style the footer element */
-footer {
   background-color: #333;
+  height: 17%;
   color: white;
-  padding: 10px;
+  justify-content: start;
+ display: flex;
+ align-items: center;
+}
+header h1{
+    padding-left: 10px;
+}
+nav{
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    margin-top: 1rem;
+}
+nav input{
+    width: 25%;
+    height: 30px;
+    border-radius: 5px;
+    outline: none;
+    border: 2px solid rgba(0, 0, 0, 0.662);
+}
+nav button{
+    background-color: #333;
+    color: white;
+    width: 70px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.sort{
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 1rem;
+    height: 2rem;
+    flex-wrap: wrap;
+}
+.sort button{
+   padding: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#sec{
+    padding-left: 3%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 2%;
+    gap: 1%;
+}
+.all, #Favourite{
+width: 85px;
+border: none;
+border-radius: 5px;
+height: 1.5rem;
+cursor: pointer;
+}
+.active{
+    background-color: #333;
+    color: white;
+}
+.pagination{
+    display: flex;
+    justify-content: center;
+    gap: 1%;
+    margin-top: 2rem;
+    
+}
+main .pagination button{
+   padding: 5px 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+footer{
+    background-color: #333;
+    width: 100%;
+    height: 7%;
+    display: flex;
+    align-items: center;
+    color: white;
+    justify-content: center;
+    margin-top: 2%;
+    
+}
+main{
+    margin-top: 3rem;
+}
+.card{
+    width: 200px;
+ border: 1px solid black;
+ height: 390px;
+ margin-top: 10px;
+}
+.card .img img{
+    width: 199px;
+    object-fit: cover;
+    height: 250px;
+}
+.card>p{
+    margin-top: 3px;
   text-align: center;
+  font-weight: 700;
+}
+.card>.outer .rating{
+    margin-left: 5px;
+    margin-top: 5px;
+}
+.card>.outer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.card .outer .icon{
+    cursor: pointer;
+}
+main ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    gap: 2%;
+    justify-content: center;
 }
